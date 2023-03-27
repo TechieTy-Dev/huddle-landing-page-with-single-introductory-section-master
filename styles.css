@@ -1,5 +1,8 @@
+/* IMPORTED FONTS  */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
+/* GLOBAL STYLES */
 *{
     margin: 0;
     padding: 0;
@@ -18,29 +21,35 @@ body {
     background-size: 100%;
 
   }
-
+/* COLORS */
 :root{
     --violet: hsl(257, 40%, 49%) ;
     --magenta: hsl(300, 69%, 71%);
 }
+/* HIDING SCROLLBAR */
 ::-webkit-scrollbar{
     width: 0px;
 }
+/* GRID CONTAINER */
 .grid{
     display: grid;
     grid-template-columns: auto;
 
     width: 100%;
 }
-.col-1{
-    width: 100%;
-}
+/* LOGO */
 .logo{
     margin-left: 3rem;
     margin-top: 1rem;
     width: 170px;
     height: 100px;
 }
+
+/* COLUMN 1 */
+.col-1{
+    width: 100%;
+}
+/* COL-1 - IMAGES */
 .mockups{
     width: 80%;
     margin-top: 3rem;
@@ -48,14 +57,14 @@ body {
     margin-bottom: 3rem;
 }
 
-
+/* COLUMN 2 */
 .col-2{
     text-align: center;
     width: 80%;
     margin-inline: auto;
     padding-bottom: 3rem;
 }
-
+/* COL-2 - CONTENT */
 h1{
    
     font-weight: 600;
@@ -70,7 +79,7 @@ p{
     margin-bottom: 1.75rem;
 }
 
-
+/* BUTTON */
 button{
     background: white;
     color: var(--violet);
@@ -87,7 +96,7 @@ button:hover{
     color: white;
     cursor: pointer;
 }
-
+/* SOCIAL ICONS */
 .socials-group{
     display: flex;
     justify-content: center;
@@ -116,6 +125,8 @@ button:hover{
     border: 1px solid hsl(300, 69%, 71%);
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 767px) {
 body{
     background: #674baf url("../images/bg-desktop.svg") no-repeat top;
@@ -125,6 +136,7 @@ body{
 
 
 }
+/* GRID CONTAINER */
     .grid{
         display: grid; 
         grid-template-columns: repeat(2, 1fr);
@@ -132,9 +144,11 @@ body{
         margin-inline: auto;
         min-height: 100vh;
     }
+    /* LOGO */
     .logo{
         margin-left:5rem;
     }
+    /* COLUMN 1 */
     .col-1{
         background: none;
         margin-top: .75rem;
@@ -142,17 +156,20 @@ body{
         width: 100%;
         margin-right: 5rem;
     }
+    /* COL-1 - IMAGES */
     .mockups{
         width: 100%;
         margin-left: 3rem;
        
     }
+    /* COLUMN 2 */
     .col-2{
         width: 100%;
         padding-top: 7rem;
         margin-left: 8rem;
         text-align: left;
     }
+    /* COL-2 - CONTENT */
     h1{
         word-wrap: break-word;
         width: 60%;
@@ -165,10 +182,12 @@ body{
         width: 70%;
         word-spacing: 3px;
     }
+    /* BUTTON */
     button{
         margin-top: 1.5rem;
         width: 200px;  
     }
+    /* SOCIAL ICONS */
     .socials-group{
        position: absolute;
        bottom: 50px;
